@@ -1,0 +1,351 @@
+html{
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: black;
+}
+
+/* navbar container */
+.menu{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+  margin: 30px 30px;
+  border-right: 3px solid rgb(223, 38, 115);
+  border-left: 3px solid rgb(223, 38, 115);
+}
+
+.menu li {
+  margin: 0 auto;
+}
+
+/* navbar items */
+
+.menu a{
+  text-decoration: none;
+  display: block;
+  color: white;
+  font-size: larger;
+  padding: 1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* navbar mouse-over effect */
+.menu a:hover{
+  color: rgb(223, 38, 115);
+  font-weight: bold;
+}
+
+/* Container holding the name, goal in AltSchool and Profile picture. */
+.intro-container{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  gap: 0;
+  flex: 1;
+  margin: 0px auto;
+}
+
+.intro{
+  flex-basis: 50%;
+  height: 500px;
+  padding: 30px;
+  line-height: 2em;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.goals, 
+.edu-info p,
+.job-info p,
+footer{
+  color: white;
+}
+
+.intro-2{
+  width: 50%;
+  height: 500px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.intro-2 img{
+  width: auto;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.paragraph-intro{
+  color: white;
+  font-size: 30px;
+  line-height: 1.4em;
+}
+
+.my-name{
+  color: rgb(223, 38, 115);
+}
+
+.experiences{
+  margin-bottom: 60px;
+  display: flex;
+  flex: 1;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+/* Subheadings in the experience section */
+.experience-subheading{
+  color: rgb(223, 38, 115);
+  font-size: 12px;
+  text-align: left;
+  padding: 40px;
+}
+
+.education-container{
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+  width: 700px;
+  height: auto;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.edu-info{
+  width: 50%;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Job Experience Section */
+.job-container{
+  display: flex;
+  flex-flow: row wrap;
+  width: 700px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.job-info{
+  width: 50%;
+  text-align: center;
+  padding: auto;
+  margin-bottom: 20px;
+}
+
+/* Skills section styling */
+.skills-container{
+  display: flex;
+  flex-flow: row wrap;
+  width: 700px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.skills-info{
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+#contact-subheading,
+.page-subheading{
+  color: rgb(223, 38, 115);
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 18px;
+  padding: 10px;
+}
+
+::placeholder{
+  font-family: Georgia, serif;
+  color: black;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+
+.contact-form,
+.login-form,
+.register-form{
+  width: 700px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-self: center;
+  gap: 30px;
+  padding: 20px;
+  color: white;
+  border-radius: 12px;
+}
+
+.contact-box,
+.login-box,
+.register-box{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.contact-box input,
+.contact-box textarea,
+.contact-box button,
+.login-box input,
+.login-box button,
+.register-box input,
+.register-box button{
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+  outline: none;
+  text-transform: capitalize;
+}
+
+.contact-box input,
+.login-box input,
+.register-box input{
+  font-size: 1em;
+}
+
+.contact-box textarea{
+  resize: none;
+  font-family: Georgia, serif;
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.contact-box button,
+.login-box button,
+.register-box button{
+  font-size: 16px;
+  font-family: Georgia, serif;
+  color: rgb(223, 38, 115);
+  background-color: black;
+}
+
+.contact-box button:hover,
+.login-box button:hover,
+.register-box button:hover{
+  background-color: white;
+}
+
+#priority{
+  padding: 10px 20px;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-family: Georgia, serif;
+}
+
+.navigation-link{
+  display: flex;
+  justify-content: right;
+}
+
+.navigation-link a{
+  color: rgb(223, 38, 115);
+  font-weight: bold;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.link-toregister a{
+  padding-left: 10px;
+  color: rgb(223, 38, 115);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.link-toregister a:hover{
+  opacity: 0.4;
+}
+
+.contact-me{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contact-me a {
+  font-size: 2em;
+  color: rgb(223, 38, 115);
+  text-decoration: none;
+  opacity: 0.4;
+}
+
+.contact-me a:hover {
+  color: rgb(223, 38, 115);
+  opacity: 1.0;
+}
+
+/* .calculator{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 300px;
+  border-radius: 8px;
+  margin: 0 auto;
+  border: 1px white;
+  background-color: black;
+  
+}
+.display textarea{
+  width: 100%;
+  resize: none;
+  background-color: white;
+  margin: 1px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+.button-area{
+  display: flex;
+  flex-flow: row wrap;
+  background-color: white;
+  width: 100%;
+list-style: none;
+  color: black;
+  
+  border: 1px solid black;
+  border-radius: 8px;
+  
+}
+.row-1,.row-2,.row-3,.row-4,.row-5{
+  margin: 2px; 
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  margin: 1px;
+ 
+  border: 1px solid crimson;
+  border: 4px;
+  flex-basis: 1 5%;
+  
+} 
+.keypad-1 p{
+  border-color: red;
+  margin: 1px;
+}
