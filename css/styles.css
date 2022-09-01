@@ -113,7 +113,7 @@ footer{
   display: flex;
   flex-flow: row wrap;
   flex: 1;
-  width: 700%;
+  width: 700px;
   height: auto;
   justify-content: center;
   margin: 0 auto;
@@ -121,7 +121,7 @@ footer{
 
 .edu-info{
   width: 50%;
-  padding: 5px;
+  padding: 30px;
   box-sizing: border-box;
   text-align: center;
   margin-bottom: 20px;
@@ -131,7 +131,7 @@ footer{
 .job-container{
   display: flex;
   flex-flow: row wrap;
-  width: 700%;
+  width: 700px;
   height: auto;
   justify-content: center;
   align-items: center;
